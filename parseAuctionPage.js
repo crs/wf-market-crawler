@@ -14,13 +14,14 @@ function output(dom) {
     
     var orders = payload['payload']['orders'];
     for (var i in payload) {
-        console.log(i, payload[i]);
+       console.log(i, payload[i]);
     }
 
-    for (var j = 0; j < min(10,orders.length); j++) {
+    for (var j = 0; j < Math.min(2,orders.length); j++) {
         console.log(orders[j]);
     }
     
+    console.log("Done");
 }
 
 function getUrl(url) {
