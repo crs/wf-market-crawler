@@ -1,3 +1,4 @@
+// methods to parse auction page for 1 item
 var http = require('https');
 var htmlParser = require('./node-htmlparser-master');
 var htmlSoup = require('./html-soup-master');
